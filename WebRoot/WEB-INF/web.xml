@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE web-app PUBLIC "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN" "http://java.sun.com/dtd/web-app_2_3.dtd">
+<web-app>
+	<display-name>PutHereTheNameOfYourWebApp</display-name>
+	<description>This a description of my web app made by Eclipse</description>
+	
+	 
+  <servlet>
+    <servlet-name>UserController</servlet-name>
+    <servlet-class>com.wpp.controller.UserController</servlet-class>
+  </servlet>
+ <servlet>
+    <servlet-name>FindUserServlet</servlet-name>
+    <servlet-class>com.wpp.controller.FindUserServlet</servlet-class>
+  </servlet>
+	
+  <servlet-mapping>
+    <servlet-name>UserController</servlet-name>
+    <url-pattern>/servlet/UserController</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+    <servlet-name>FindUserServlet</servlet-name>
+    <url-pattern>/servlet/FindUserServlet</url-pattern>
+  </servlet-mapping>
+
+	<!-- <welcome-file-list>
+		<welcome-file>/AJsp.jsp</welcome-file>
+	</welcome-file-list> -->
+</web-app>
